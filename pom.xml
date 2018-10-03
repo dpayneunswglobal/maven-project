@@ -20,6 +20,7 @@
 		<activemq-kahadb-store.version>5.15.6</activemq-kahadb-store.version>
 		<uid>dpayneunswglobal</uid>
 		<pwd></pwd>
+		
 	</properties>
 
 	<build>
