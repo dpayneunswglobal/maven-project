@@ -18,6 +18,7 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
     <jms:activemq-connector name="Active_MQ" brokerURL="vm://localhost" validateConnections="true" doc:name="Active MQ"/>
     <jms:activemq-connector name="Active_MQ1" brokerURL="vm://localhost" validateConnections="true" doc:name="Active MQ"/>
     <jms:activemq-connector name="Active_MQ2" brokerURL="vm://localhost" validateConnections="true" doc:name="Active MQ"/>
+    
     <flow name="logFlights">
         <jms:inbound-endpoint queue="flights" connector-ref="Active_MQ1" doc:name="JMS"/>
         <logger message="#[message.payload]" level="INFO" doc:name="Logger"/>
